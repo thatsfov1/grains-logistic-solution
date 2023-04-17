@@ -8,6 +8,14 @@
   --footer-background-color:#EAE5DD;
 }
 
+*::selection{
+  background-color: var(--main-orange-color);
+}
+
+::selection{
+  color: #fff;
+}
+
 body{
   margin: 0;
   font-family: 'Poppins', sans-serif;

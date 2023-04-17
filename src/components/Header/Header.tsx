@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './Header.module.css'
 import {BsFillTelephoneFill} from "react-icons/all";
+import {Link} from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,12 +10,12 @@ const Header = () => {
           Grains Logistic Solution
       </div>
         <nav className={s.nav}>
-            <span>Home</span>
-            <span>About</span>
-            <span>Contact</span>
-            <div>
+            <Link to='/'>Home</Link>
+            <Link to='/about'>About</Link>
+            <Link to='/contact'>Contact</Link>
+            <span>
                 <BsFillTelephoneFill/> +38 (050) 3294 500
-            </div>
+            </span>
         </nav>
     </div>
   )

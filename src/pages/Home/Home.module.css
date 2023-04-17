@@ -1,6 +1,72 @@
-
-img{
-    width: 100vw;
-    position: relative;
-    z-index: -1;
+.slider{
+    background-image: url("../../assets/motorway2.jpeg");
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.slider_row{
+    margin: 0 auto;
+    width: 80%;
+    padding: 50px;
+}
+
+.text_overlay{
+    margin-bottom: 100px;
+}
+
+.text_top{
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    color: #fff;
+}
+
+.text_bottom{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.slider_btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main-orange-color);
+    padding: 17px 50px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.achievements{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 140px ;
+    padding-bottom: 140px ;
+}
+
+.single_achievement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ach_number{
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: 0.02em;
+    color: var(--main-orange-color);
+}
+
+.ach_label{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--second-title-color);
+}
+
+

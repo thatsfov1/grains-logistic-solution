@@ -17,15 +17,16 @@
     font-size: 14px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--second-title-color);
     align-items: center;
 }
 
-.nav span{
+.nav a{
     transition: .3s;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--second-title-color);
 }
 
-.nav span:hover{
+.nav a:hover{
     color: var(--main-orange-color);
 }
