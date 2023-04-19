@@ -14,7 +14,7 @@ const Header = () => {
             <Link to='/about'>About</Link>
             <Link to='/contact'>Contact</Link>
             <span>
-                <BsFillTelephoneFill/> +38 (050) 3294 500
+                <BsFillTelephoneFill/> +38 (066)103-00-53
             </span>
         </nav>
     </div>

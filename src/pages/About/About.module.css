@@ -1,0 +1,41 @@
+.title{
+    width: 100%;
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    background-image: url("../../assets/motorway.jpeg");
+    background-attachment: fixed;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_container{
+    background-color: var(--footer-background-color);
+    padding: 50px;
+}
+
+.about_main{
+    color: var(--second-title-color);
+
+    font-size: 24px;
+
+}
+
+.row{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about_other{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_other div{
+    width: 40%;
+    color: var(--main-text-color);
+    font-size: 14px;
+}

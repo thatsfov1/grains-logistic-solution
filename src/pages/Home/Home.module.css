@@ -1,5 +1,6 @@
 .slider{
     background-image: url("../../assets/motorway2.jpeg");
+    background-attachment: fixed;
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -8,8 +9,7 @@
 }
 
 .slider_row{
-    margin: 0 auto;
-    width: 80%;
+    width: 60%;
     padding: 50px;
 }
 
@@ -68,5 +68,75 @@
     text-transform: uppercase;
     color: var(--second-title-color);
 }
+
+.why_choose_us{
+    width: 67%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.small_title{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--main-orange-color);
+}
+
+.big_title{
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.motive_text{
+    color: var(--main-text-color);
+    width: 66%;
+}
+
+.single_service{
+    position: relative;
+    width: 25%;
+}
+
+.first{
+    width: 19%;
+}
+
+.service_number{
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 116px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px #E6E1D9;
+    color: var(--background-color);
+    z-index: 1;
+}
+
+
+.service_name{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--second-title-color);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: -25px;
+    top: 45%;
+    z-index: 2;
+}
+
+
+
+
+.service{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 

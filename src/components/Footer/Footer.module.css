@@ -12,12 +12,14 @@
 
 .address{
     color: var(--main-text-color);
+
 }
 
-.address p{
+.address div{
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-bottom: 5px;
 }
 
 .address svg{
@@ -34,58 +36,54 @@
 }
 
 .contact_us{
-
-}
-
-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-input, textarea{
-    background: none;
-    padding: 10px;
-    border-radius: 20px;
-    outline: none;
-    border: 1px solid var(--main-text-color);
-    width: 350px;
-    font-family: 'Poppins', sans-serif;
-}
-
-input::placeholder,textarea::placeholder{
-    font-style: italic;
-    color: var(--main-text-color);
-    font-family: 'Poppins', sans-serif;
-}
-
-button[type=submit]{
-    width: 200px;
-    background-color: var(--main-orange-color);
-    border-radius: 30px;
-    border: none;
-    height: 50px;
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    color: #fff;
 }
 
 
 .bottom{
     border-top: 1px solid var(--main-text-color);
     padding: 20px;
-    width: 100%;
     text-align: center;
     color: var(--main-text-color);
 }
 
-.error{
-    color: var(--main-orange-color);
+
+
+.phone_numbers{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_btn{
+    width: 200px;
+    background-color: var(--main-orange-color);
+    border-radius: 30px;
+    border: none;
+    height: 50px;
     font-size: 14px;
-    margin-left: 10px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.links_list{
+    margin-top: 30px;
+}
+
+.links_list a{
+    display: block;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    margin-bottom: 6px;
+}
+
+.contact_subtitle{
+    color: var(--main-text-color);
 }
