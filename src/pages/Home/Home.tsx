@@ -15,6 +15,18 @@ const textAnimation = {
     })
 }
 
+const achievementAnimation = {
+    hidden: {
+        y:100,
+        opacity:0
+    },
+    visible: {
+        y:0,
+        opacity: 1,
+        transition: {delay:0.5}
+    }
+}
+
 const Home = () => {
   return (
     <div className={s.container}>
@@ -31,38 +43,40 @@ const Home = () => {
                     Read more
                 </Link></div>
         </div>
-      <div className={s.achievements}>
-          <div className={s.single_achievement}>
+      <motion.div initial='hidden' whileInView='visible' viewport={{amount:0.3 ,once:true}}  className={s.achievements}>
+          <motion.div variants={achievementAnimation} className={s.single_achievement}>
               <div className={s.ach_number}>
                   1999
               </div>
               <div className={s.ach_label}>
                 Happy customers
               </div>
-          </div>
-          <div className={s.single_achievement}>
+          </motion.div>
+          <motion.div variants={achievementAnimation} className={s.single_achievement}>
               <div className={s.ach_number}>
                   1721
               </div>
               <div className={s.ach_label}>
                 Projects done
               </div>
-          </div><div className={s.single_achievement}>
+          </motion.div>
+          <motion.div variants={achievementAnimation} className={s.single_achievement}>
               <div className={s.ach_number}>
                   93
               </div>
               <div className={s.ach_label}>
                   awards win
               </div>
-          </div><div className={s.single_achievement}>
+          </motion.div>
+          <motion.div variants={achievementAnimation} className={s.single_achievement}>
               <div className={s.ach_number}>
                   1800
               </div>
               <div className={s.ach_label}>
                 Expert workers
               </div>
-          </div>
-      </div>
+          </motion.div>
+      </motion.div>
       {/*<div className={s.our_services}>*/}
       {/*      <div className={s.services__title}>*/}
       {/*          <div className={s.services__title_top}>*/}
