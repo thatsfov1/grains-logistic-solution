@@ -1,5 +1,5 @@
 .container{
-    width: 100%;
+    min-width: 100vw;
     background-color: var(--footer-background-color);
 }
 
@@ -25,8 +25,6 @@
 .address svg{
     color: var(--main-orange-color);
 }
-
-
 
 .title{
     font-family: 'Syne', sans-serif;
@@ -68,6 +66,16 @@
     text-decoration: none;
     color: #fff;
     margin-top: 20px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.contact_btn:hover{
+    filter: brightness(110%);
+}
+
+.contact_btn:active{
+    filter: brightness(90%);
 }
 
 .links_list{
@@ -86,4 +94,10 @@
 
 .contact_subtitle{
     color: var(--main-text-color);
+}
+
+@media(max-width: 1080px){
+    .top_footer{
+        flex-direction: column;
+    }
 }

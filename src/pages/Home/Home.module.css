@@ -38,6 +38,15 @@
     padding: 17px 50px;
     border-radius: 30px;
     font-weight: 500;
+    transition: all .3s ;
+}
+
+.slider_btn:hover{
+    filter: brightness(110%);
+}
+
+.slider_btn:active{
+    filter: brightness(90%);
 }
 
 .achievements{

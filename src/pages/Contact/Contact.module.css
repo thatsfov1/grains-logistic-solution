@@ -1,19 +1,22 @@
-
 .title{
+    color: #fff;
+    font-size: 50px;
     font-family: 'Syne', sans-serif;
     font-weight: 800;
-    font-size: 50px;
-    color: var(--main-title-color);
-    background-color: var(--footer-background-color);
+    background-image: url("../../assets/truck2.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
     padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact_container{
     display: flex;
     justify-content: space-between;
-    width: 1140px;
-    margin: auto;
-    margin-bottom: 50px;
+    padding: 50px ;
+    margin: 0 auto;
 }
 
 .contact_block{
@@ -23,8 +26,8 @@
 .mapouter{
     position:relative;
     text-align:right;
-    height:200px;
-    width:400px;
+    height:300px;
+    width:500px;
     margin-top: 20px;
 }
 
@@ -72,6 +75,15 @@ button[type=submit]{
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
     color: #fff;
+    transition: all .3s;
+}
+
+button[type=submit]:hover{
+    filter: brightness(110%);
+}
+
+button[type=submit]:active{
+    filter: brightness(90%);
 }
 
 .error{
@@ -91,6 +103,7 @@ button[type=submit]{
 
 .company_info{
     color: var(--main-text-color);
+    padding: 50px;
 }
 
 .company_info_title{
@@ -113,3 +126,19 @@ li{
     list-style: none;
 }
 
+
+@media (max-width:1200px ) {
+    .contact_container{
+        flex-direction: column;
+    }
+    form{
+        align-items: center;
+    }
+    input, textarea, button[type=submit]{
+        width: 100%;
+    }
+    button[type=submit]{
+
+    }
+
+}

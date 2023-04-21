@@ -7,17 +7,17 @@ import {createLogger} from "vite";
 
 const Contact = () => {
 
-    const {register,formState:{ errors },handleSubmit} = useForm()
+    const {register,formState:{ errors },handleSubmit, reset} = useForm()
     const form = useRef<HTMLFormElement>(null);
 
-    const sendEmail = (e:FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
+    const sendEmail = (data:any) => {
         emailjs.sendForm('service_49sw6hn',
             'template_mm63bex',
             form.current,
             'zZCNCQObFfMVNCjw1')
             .then((result) => {
                 console.log(result.text);
+                reset()
             }, (error) => {
                 console.log(error.text);
             });
@@ -25,13 +25,13 @@ const Contact = () => {
 
   return (
     <div className={s.container}>
-      <p className={s.title}>Contact</p>
+      <div className={s.title}>Contact</div>
         <div className={s.contact_container}>
             <div className={s.contact_block}>
                 <div className={s.form_title}>
                     Get in touch
                 </div>
-                <form ref={form} onSubmit={sendEmail}>
+                <form ref={form} onSubmit={handleSubmit(sendEmail)}>
                     <input {...register("user_name", {required:"Name is required"})} type='text'
                            placeholder='Name and Surname(Required)' name='user_name'/>
                     {errors.user_name && <div className={s.error}><FiAlertCircle/> {errors.user_name?.message}</div> }
@@ -67,7 +67,7 @@ const Contact = () => {
                     <span>BANK: Raiffeisen Bank International, Zhytomyr city</span>
                     <span>IBAN:UA23 3808 0500 0000 0026 0058 1438 5</span>
                     <span>CURRENCY: EUR</span>
-                    <a href='https://docs.google.com/document/d/19rLguciOblZxcKGqR8Bm6-kcWa52Uhl_/edit?usp=share_link&ouid=106016922288049645004&rtpof=true&sd=true'>
+                    <a target='_blank' href='https://docs.google.com/document/d/19rLguciOblZxcKGqR8Bm6-kcWa52Uhl_/edit?usp=share_link&ouid=106016922288049645004&rtpof=true&sd=true'>
                         MORE INFO
                     </a>
                 </div>

@@ -1,12 +1,16 @@
 import React from 'react'
 import s from './Footer.module.css'
 import {BsFillTelephoneFill, FaMapMarkerAlt, IoMail} from "react-icons/all";
-import {useForm} from "react-hook-form";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 const Footer = () => {
 
+    const navigate = useNavigate()
 
+    const contactPage = () => {
+        navigate('/contact')
+        window.scroll(0,0)
+    }
 
   return (
     <div className={s.container}>
@@ -40,9 +44,9 @@ const Footer = () => {
                         Feel Free To Contact Us
                     </span>
                     <span className={s.contact_subtitle}>We can answer all of your questions</span>
-                    <Link className={s.contact_btn} to='/contact'>
+                    <div onClick={contactPage} className={s.contact_btn}>
                         Contact
-                    </Link>
+                    </div>
             </div>
         </div>
         <div className={s.bottom}>
