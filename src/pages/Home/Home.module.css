@@ -1,11 +1,25 @@
 .slider{
     background-image: url("../../assets/motorway2.jpeg");
     background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
     height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation-name: zoom-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .slider_row{
@@ -32,13 +46,13 @@
 }
 
 .slider_btn{
-    text-decoration: none;
     color: #fff;
     background-color: var(--main-orange-color);
     padding: 17px 50px;
     border-radius: 30px;
     font-weight: 500;
     transition: all .3s ;
+    cursor: pointer;
 }
 
 .slider_btn:hover{
@@ -138,14 +152,22 @@
     z-index: 2;
 }
 
-
-
-
 .service{
     display: flex;
     justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+    .service{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .service_name{
+        right: -90px;
+    }
+
+}
 
 
 

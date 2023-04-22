@@ -4,6 +4,7 @@ import {FiAlertCircle} from "react-icons/all";
 import {useForm} from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import {createLogger} from "vite";
+import { motion } from 'framer-motion';
 
 const Contact = () => {
 
@@ -28,9 +29,10 @@ const Contact = () => {
       <div className={s.title}>Contact</div>
         <div className={s.contact_container}>
             <div className={s.contact_block}>
-                <div className={s.form_title}>
+                <motion.div initial={{opacity:0, x:-100}} animate={{opacity:1, x:0}}  className={s.form_title}>
                     Get in touch
-                </div>
+
+                </motion.div>
                 <form ref={form} onSubmit={handleSubmit(sendEmail)}>
                     <input {...register("user_name", {required:"Name is required"})} type='text'
                            placeholder='Name and Surname(Required)' name='user_name'/>
@@ -56,27 +58,26 @@ const Contact = () => {
                 </form>
             </div>
             <div className={s.company_info}>
-                <span className={s.company_info_title}>
+                <motion.span initial={{opacity:0, x:100}} animate={{opacity:1, x:0}} className={s.company_info_title}>
                     PE "Grains Logistic Solution"
-                </span>
-                <ul className={s.info}>
+                </motion.span>
+                <motion.ul initial={{opacity:0, x:100}} animate={{opacity:1, x:0}} transition={{duration:0.4}} className={s.info}>
                     <li>Ukraine, 12432 Skomorokhy, Naberezhna st. 102</li>
                     <li>Taxpayer identification number(IPN):439412006083</li>
-                </ul>
-                <div className={s.payment}>
+                </motion.ul>
+                <motion.div initial={{opacity:0, x:100}} animate={{opacity:1, x:0}} transition={{duration:0.5}} className={s.payment}>
                     <span>BANK: Raiffeisen Bank International, Zhytomyr city</span>
                     <span>IBAN:UA23 3808 0500 0000 0026 0058 1438 5</span>
                     <span>CURRENCY: EUR</span>
                     <a target='_blank' href='https://docs.google.com/document/d/19rLguciOblZxcKGqR8Bm6-kcWa52Uhl_/edit?usp=share_link&ouid=106016922288049645004&rtpof=true&sd=true'>
                         MORE INFO
                     </a>
-                </div>
-                <div className={s.mapouter}>
+                </motion.div>
+                <motion.div initial={{opacity:0}} animate={{opacity:1}} className={s.mapouter}>
                     <div className={s.gmap_canvas}>
-                        <iframe width="770" height="510" id="gmap_canvas"
-                                src="https://maps.google.com/maps?q=скоморохи житомирска&t=&z=10&ie=UTF8&iwloc=&output=embed"></iframe>
+                        <iframe src="https://snazzymaps.com/embed/483796" width="500px" height="300px" style={{border:"none"}}></iframe>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     </div>

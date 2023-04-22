@@ -12,6 +12,7 @@ const Header = () => {
           <ul className={s.menu}>
               <li><Link to='/'>Home</Link></li>
               <li><Link to='/about'>About</Link></li>
+              <li><Link to='/fleet'>Fleet</Link></li>
               <li><Link to='/contact'>Contact</Link></li>
               <li><a href="tel:+380661030053"><BsFillTelephoneFill/> +38 (066)103-00-53</a></li>
           </ul>

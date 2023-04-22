@@ -1,7 +1,8 @@
 import React from 'react'
 import s from './Home.module.css'
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import { motion } from 'framer-motion';
+
 
 const textAnimation = {
     hidden: {
@@ -28,6 +29,8 @@ const achievementAnimation = {
 }
 
 const Home = () => {
+
+    const navigate = useNavigate()
   return (
     <div className={s.container}>
         <div className={s.slider}>
@@ -39,12 +42,12 @@ const Home = () => {
                     <motion.div variants={textAnimation} custom={2} className={s.text_bottom}>"Grains Logistic Solution" is a trusted logistics partner, providing efficient and reliable solutions to businesses of all sizes.
                     </motion.div>
                 </motion.div>
-                <Link to='/about' className={s.slider_btn}>
+                <motion.span transition={{duration:0.3}} initial={{opacity:0}} animate={{opacity:1}} onClick={() => navigate('/about')}  className={s.slider_btn}>
                     Read more
-                </Link></div>
+                </motion.span></div>
         </div>
-      <motion.div initial='hidden' whileInView='visible' viewport={{amount:0.3 ,once:true}}  className={s.achievements}>
-          <motion.div variants={achievementAnimation} className={s.single_achievement}>
+      <motion.div variants={achievementAnimation} initial='hidden' whileInView='visible' viewport={{amount:0.3 ,once:true}}  className={s.achievements}>
+          <motion.div  className={s.single_achievement}>
               <div className={s.ach_number}>
                   1999
               </div>
@@ -52,7 +55,7 @@ const Home = () => {
                 Happy customers
               </div>
           </motion.div>
-          <motion.div variants={achievementAnimation} className={s.single_achievement}>
+          <motion.div className={s.single_achievement}>
               <div className={s.ach_number}>
                   1721
               </div>
@@ -60,7 +63,7 @@ const Home = () => {
                 Projects done
               </div>
           </motion.div>
-          <motion.div variants={achievementAnimation} className={s.single_achievement}>
+          <motion.div className={s.single_achievement}>
               <div className={s.ach_number}>
                   93
               </div>
@@ -68,7 +71,7 @@ const Home = () => {
                   awards win
               </div>
           </motion.div>
-          <motion.div variants={achievementAnimation} className={s.single_achievement}>
+          <motion.div className={s.single_achievement}>
               <div className={s.ach_number}>
                   1800
               </div>
@@ -91,9 +94,9 @@ const Home = () => {
         <div className={s.small_title}>
             why choose us
         </div>
-         <div className={s.big_title}>
+         <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1, y:0}} viewport={{once:true}} className={s.big_title}>
              Our motive to change world
-         </div>
+         </motion.div>
          <div className={s.motive_text}>
              The motive of our logistic company is to revolutionize the industry by creating sustainable, eco-friendly logistics solutions that reduce our carbon footprint and promote a healthier planet for future generations.
          </div>
