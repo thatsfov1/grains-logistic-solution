@@ -36,10 +36,10 @@ const Home = () => {
         <div className={s.slider}>
             <div className={s.slider_row}>
                 <motion.div  initial='hidden' whileInView='visible' viewport={{once:true}}  className={s.text_overlay}>
-                    <motion.div variants={textAnimation} custom={1} className={s.text_top}>
+                    <motion.div variants={textAnimation} custom={3} className={s.text_top}>
                         Efficiency in Motion.
                     </motion.div>
-                    <motion.div variants={textAnimation} custom={2} className={s.text_bottom}>"Grains Logistic Solution" is a trusted logistics partner, providing efficient and reliable solutions to businesses of all sizes.
+                    <motion.div variants={textAnimation} custom={4} className={s.text_bottom}>"Grains Logistic Solution" is a trusted logistics partner, providing efficient and reliable solutions to businesses of all sizes.
                     </motion.div>
                 </motion.div>
                 <motion.span transition={{duration:0.3}} initial={{opacity:0}} animate={{opacity:1}} onClick={() => navigate('/about')}  className={s.slider_btn}>

@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import s from './Header.module.css'
 import {BsFillTelephoneFill} from "react-icons/all";
 import {Link} from "react-router-dom";
 
 const Header = () => {
-  return (
+
+    const [isChoosed, setIsChoosed] = useState();
+
+    return (
       <header className={s.header}>
           <Link to='/' className={s.logo}>Grains Logistic Solution</Link>
           <input className={s.menu_btn} type="checkbox" id="menu_btn"/>
@@ -15,6 +18,10 @@ const Header = () => {
               <li><Link to='/fleet'>Fleet</Link></li>
               <li><Link to='/contact'>Contact</Link></li>
               <li><a href="tel:+380661030053"><BsFillTelephoneFill/> +38 (066)103-00-53</a></li>
+              {/*<li className={s.languages} >*/}
+              {/*    <span>EN</span>*/}
+              {/*    <span>UA</span>*/}
+              {/*</li>*/}
           </ul>
       </header>
   )
