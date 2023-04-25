@@ -5,8 +5,6 @@ import {Link} from "react-router-dom";
 
 const Header = () => {
 
-    const [isChoosed, setIsChoosed] = useState();
-
     return (
       <header className={s.header}>
           <Link to='/' className={s.logo}>Grains Logistic Solution</Link>

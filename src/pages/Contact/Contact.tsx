@@ -26,12 +26,13 @@ const Contact = () => {
 
   return (
     <div className={s.container}>
-      <div className={s.title}>Contact</div>
+      <div className={s.title_container}>
+          <div className={s.title}>Contact</div>
+      </div>
         <div className={s.contact_container}>
             <div className={s.contact_block}>
                 <motion.div initial={{opacity:0, x:-100}} animate={{opacity:1, x:0}}  className={s.form_title}>
                     Get in touch
-
                 </motion.div>
                 <form ref={form} onSubmit={handleSubmit(sendEmail)}>
                     <input {...register("user_name", {required:"Name is required"})} type='text'

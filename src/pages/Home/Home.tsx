@@ -46,95 +46,101 @@ const Home = () => {
                     Read more
                 </motion.span></div>
         </div>
-      <motion.div variants={achievementAnimation} initial='hidden' whileInView='visible' viewport={{amount:0.3 ,once:true}}  className={s.achievements}>
-          <motion.div  className={s.single_achievement}>
-              <div className={s.ach_number}>
-                  1999
-              </div>
-              <div className={s.ach_label}>
-                Happy customers
-              </div>
-          </motion.div>
-          <motion.div className={s.single_achievement}>
-              <div className={s.ach_number}>
-                  1721
-              </div>
-              <div className={s.ach_label}>
-                Projects done
-              </div>
-          </motion.div>
-          <motion.div className={s.single_achievement}>
-              <div className={s.ach_number}>
-                  93
-              </div>
-              <div className={s.ach_label}>
-                  awards win
-              </div>
-          </motion.div>
-          <motion.div className={s.single_achievement}>
-              <div className={s.ach_number}>
-                  1800
-              </div>
-              <div className={s.ach_label}>
-                Expert workers
-              </div>
-          </motion.div>
-      </motion.div>
-      {/*<div className={s.our_services}>*/}
-      {/*      <div className={s.services__title}>*/}
-      {/*          <div className={s.services__title_top}>*/}
-      {/*              Our services*/}
-      {/*          </div>*/}
-      {/*          <div className={s.services__title_bottom}>*/}
-      {/*              Best Services From us*/}
-      {/*          </div>*/}
-      {/*      </div>*/}
-      {/*</div>*/}
-      <div className={s.why_choose_us}>
-        <div className={s.small_title}>
-            why choose us
-        </div>
-         <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1, y:0}} viewport={{once:true}} className={s.big_title}>
-             Our motive to change world
-         </motion.div>
-         <div className={s.motive_text}>
-             The motive of our logistic company is to revolutionize the industry by creating sustainable, eco-friendly logistics solutions that reduce our carbon footprint and promote a healthier planet for future generations.
-         </div>
-          <div className={s.service}>
-              <div className={s.single_service + ' ' + s.first}>
+        <div className={s.content_container}>
+            <motion.div variants={achievementAnimation} initial='hidden' whileInView='visible'
+                        viewport={{amount: 0.3, once: true}} className={s.achievements}>
+                <motion.div className={s.single_achievement}>
+                    <div className={s.ach_number}>
+                        1999
+                    </div>
+                    <div className={s.ach_label}>
+                        Happy customers
+                    </div>
+                </motion.div>
+                <motion.div className={s.single_achievement}>
+                    <div className={s.ach_number}>
+                        1721
+                    </div>
+                    <div className={s.ach_label}>
+                        Projects done
+                    </div>
+                </motion.div>
+                <motion.div className={s.single_achievement}>
+                    <div className={s.ach_number}>
+                        93
+                    </div>
+                    <div className={s.ach_label}>
+                        awards win
+                    </div>
+                </motion.div>
+                <motion.div className={s.single_achievement}>
+                    <div className={s.ach_number}>
+                        1800
+                    </div>
+                    <div className={s.ach_label}>
+                        Expert workers
+                    </div>
+                </motion.div>
+            </motion.div>
+            {/*<div className={s.our_services}>*/}
+            {/*      <div className={s.services__title}>*/}
+            {/*          <div className={s.services__title_top}>*/}
+            {/*              Our services*/}
+            {/*          </div>*/}
+            {/*          <div className={s.services__title_bottom}>*/}
+            {/*              Best Services From us*/}
+            {/*          </div>*/}
+            {/*      </div>*/}
+            {/*</div>*/}
+            <div className={s.why_choose_us}>
+                <div className={s.small_title}>
+                    why choose us
+                </div>
+                <motion.div initial={{opacity: 0, y: 50}} whileInView={{opacity: 1, y: 0}} viewport={{once: true}}
+                            className={s.big_title}>
+                    Our motive to change world
+                </motion.div>
+                <div className={s.motive_text}>
+                    The motive of our logistic company is to revolutionize the industry by creating sustainable,
+                    eco-friendly logistics solutions that reduce our carbon footprint and promote a healthier planet for
+                    future generations.
+                </div>
+                <div className={s.service}>
+                    <div className={s.single_service + ' ' + s.first}>
                     <span className={s.service_number}>
                         01
                     </span>
-                    <div className={s.service_name}>
-                        Quality services
+                        <div className={s.service_name}>
+                            Quality services
+                        </div>
                     </div>
-              </div>
-              <div className={s.single_service}>
+                    <div className={s.single_service}>
                     <span className={s.service_number}>
                         02
                     </span>
-                  <div className={s.service_name}>
-                      expert workers
-                  </div>
-              </div>
-              <div className={s.single_service}>
+                        <div className={s.service_name}>
+                            expert workers
+                        </div>
+                    </div>
+                    <div className={s.single_service}>
                     <span className={s.service_number}>
                         03
                     </span>
-                  <div className={s.service_name}>
-                      Free consulting
-                  </div>
-              </div>
-              <div className={s.single_service}>
+                        <div className={s.service_name}>
+                            Customer support
+                        </div>
+                    </div>
+                    <div className={s.single_service}>
                     <span className={s.service_number}>
                         04
                     </span>
-                  <div className={s.service_name}>
-                      Customer support
-                  </div>
-              </div>
-          </div>
-      </div>
+                        <div className={s.service_name}>
+                            Free consulting
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
   )

@@ -1,20 +1,39 @@
-.title{
+.title_container{
     color: #fff;
-    font-size: 50px;
+    padding: 50px;
     font-family: 'Syne', sans-serif;
     font-weight: 800;
-    background-image: url("../../assets/motorway.jpeg");
+    background-image: url("../../assets/pagesimage.jpeg");
+    background-size: cover;
+    position: relative;
     background-attachment: fixed;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+}
+
+.title_container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(73, 38, 14, 0.5);
+    z-index: 2;
+}
+
+
+.title{
+    z-index: 3;
+    font-size: 50px;
+    position: relative;
 }
 
 .about_container{
     display: flex;
     padding: 50px;
     gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 p:first-child{

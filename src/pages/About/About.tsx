@@ -34,8 +34,8 @@ const About = () => {
   return (
     <>
         {loaded ? <div>
-            <div className={s.title}>
-                About us
+            <div className={s.title_container}>
+                <div className={s.title}>About us</div>
             </div>
             <motion.div initial='hidden' whileInView='visible' viewport={{once:true}} className={s.about_container}>
                 <motion.div custom={-100} variants={animation} className={s.logo}>
