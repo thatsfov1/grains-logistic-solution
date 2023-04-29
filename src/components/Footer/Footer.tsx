@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
         </div>
         <div className={s.bottom}>
-            ⓒ Grains Logistic Solution 2023 - All rights reserved
+            ⓒ Grains Logistic Solution 2023
         </div>
     </div>
   )

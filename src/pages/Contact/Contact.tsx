@@ -76,7 +76,7 @@ const Contact = () => {
                 </motion.div>
                 <motion.div initial={{opacity:0}} animate={{opacity:1}} className={s.mapouter}>
                     <div className={s.gmap_canvas}>
-                        <iframe src="https://snazzymaps.com/embed/483796" width="500px" height="300px" style={{border:"none"}}></iframe>
+                        <iframe className={s.map} src="https://snazzymaps.com/embed/485881" width="500px" height="300px" style={{border:"none"}}></iframe>
                     </div>
                 </motion.div>
             </div>

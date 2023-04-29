@@ -10,10 +10,11 @@
     gap: 100px;
 }
 
-.address{
+.contact_subtitle, .links_list a, .address{
     color: var(--main-text-color);
-
+    font-size: 16px;
 }
+
 
 .address div{
     display: flex;
@@ -85,19 +86,38 @@
 .links_list a{
     display: block;
     text-transform: uppercase;
-    color: var(--main-text-color);
     text-decoration: none;
-    font-size: 14px;
     letter-spacing: 0.14em;
     margin-bottom: 6px;
 }
 
-.contact_subtitle{
-    color: var(--main-text-color);
-}
+
 
 @media(max-width: 1080px){
     .top_footer{
         flex-direction: column;
+        padding: 30px 50px;
     }
 }
+
+@media(max-width: 576px){
+    .top_footer{
+        flex-direction: column;
+        padding: 15px;
+        gap: 40px;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .contact_subtitle, .links_list a, .address ,.bottom{
+        font-size: 14px;
+    }
+    .links_list{
+        margin-top: 15px;
+    }
+    .contact_btn{
+        width: 160px;
+        height: 40px;
+    }
+}
+

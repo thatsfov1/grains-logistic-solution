@@ -67,6 +67,15 @@ p:first-child{
     }
 }
 
+@media (max-width: 992px) {
+    .title_container{
+        padding: 20px;
+    }
+    .title{
+        font-size: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     .logo{
         display: flex;
@@ -74,8 +83,5 @@ p:first-child{
     }
     .logo img{
         width: 70%;
-    }
-    .title{
-        font-size: 36px;
     }
 }
