@@ -24,7 +24,7 @@ const achievementAnimation = {
     visible: {
         y:0,
         opacity: 1,
-        transition: {delay:0.5}
+        transition: {delay:0.1}
     }
 }
 
@@ -48,10 +48,10 @@ const Home = () => {
         </div>
         <div className={s.content_container}>
             <motion.div variants={achievementAnimation} initial='hidden' whileInView='visible'
-                        viewport={{amount: 0.3, once: true}} className={s.achievements}>
+                        viewport={{amount: 0.1, once: true}} className={s.achievements}>
                 <motion.div className={s.single_achievement}>
                     <div className={s.ach_number}>
-                        1999
+                        600
                     </div>
                     <div className={s.ach_label}>
                         Happy customers
@@ -59,7 +59,7 @@ const Home = () => {
                 </motion.div>
                 <motion.div className={s.single_achievement}>
                     <div className={s.ach_number}>
-                        1721
+                        476
                     </div>
                     <div className={s.ach_label}>
                         Projects done
@@ -67,31 +67,26 @@ const Home = () => {
                 </motion.div>
                 <motion.div className={s.single_achievement}>
                     <div className={s.ach_number}>
-                        93
+                        20
                     </div>
                     <div className={s.ach_label}>
-                        awards win
+                        modern trucks
                     </div>
                 </motion.div>
                 <motion.div className={s.single_achievement}>
                     <div className={s.ach_number}>
-                        1800
+                        100%
                     </div>
                     <div className={s.ach_label}>
-                        Expert workers
+                        Reliability of delivery
                     </div>
                 </motion.div>
             </motion.div>
-            {/*<div className={s.our_services}>*/}
-            {/*      <div className={s.services__title}>*/}
-            {/*          <div className={s.services__title_top}>*/}
-            {/*              Our services*/}
-            {/*          </div>*/}
-            {/*          <div className={s.services__title_bottom}>*/}
-            {/*              Best Services From us*/}
-            {/*          </div>*/}
-            {/*      </div>*/}
-            {/*</div>*/}
+        </div>
+            <div className={s.price_container}>
+
+            </div>
+        <div className={s.content_container}>
             <div className={s.why_choose_us}>
                 <div className={s.small_title}>
                     why choose us

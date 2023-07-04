@@ -34,9 +34,9 @@ const Footer = () => {
             <div className={s.quick_links}>
                 <span className={s.title}>Quick Links</span>
                 <div className={s.links_list}>
+                    <Link to='/fleet'>Fleet</Link>
                     <Link to='/about'>About us</Link>
                     <Link to='/contact'>Contact </Link>
-                    <Link to='/our-services'>Our services</Link>
                 </div>
             </div>
             <div className={s.contact_us}>

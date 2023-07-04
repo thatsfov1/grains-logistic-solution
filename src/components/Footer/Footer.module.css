@@ -15,6 +15,14 @@
     font-size: 16px;
 }
 
+.links_list a{
+    transition: .3s;
+}
+
+.links_list a:hover {
+    color: var(--main-orange-color);
+}
+
 
 .address div{
     display: flex;

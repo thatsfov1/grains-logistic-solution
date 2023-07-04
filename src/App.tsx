@@ -8,6 +8,7 @@ import Contact from "./pages/Contact/Contact";
 import {useEffect, useState} from "react";
 import FontFaceObserver from 'fontfaceobserver'
 import loading from './assets/loading.svg'
+import Fleet from "./pages/Fleet/Fleet";
 
 function App() {
     const [loaded, setLoaded] = useState(false);
@@ -35,6 +36,7 @@ function App() {
                 <Route path='/' element={<Home/>}/>
                 <Route path='/about' element={<About/>}/>
                 <Route path='/contact' element={<Contact/>}/>
+                <Route path='/fleet' element={<Fleet/>}/>
             </Routes>
         </div>
         <Footer/>
