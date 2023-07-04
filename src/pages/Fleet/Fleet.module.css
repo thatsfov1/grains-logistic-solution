@@ -87,6 +87,24 @@ table th, table td {
     .title{
         font-size: 30px;
     }
+    .truck_block{
+        flex-direction: column;
+    }
+    .truck_pic{
+        margin: 0 auto;
+    }
+    table{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
 }
 
+@media (max-width: 576px) {
+    .truck_pic img{
+        width: 300px;
+    }
+    .truck_desc_text{
+        font-size: 14px;
+    }
+}
 

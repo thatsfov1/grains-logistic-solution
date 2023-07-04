@@ -32,7 +32,8 @@ const Fleet = () => {
                         Man TGX 440
                     </div>
                     <div className={s.truck_desc_text}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet deleniti ducimus enim exercitationem, explicabo incidunt ipsum itaque nostrum possimus provident quasi quis quos repellat sed sit totam ullam ut? Aliquid cum dolores iusto quia repellendus! Ad aut debitis deserunt et impedit, molestias nesciunt officiis quam quia quisquam sequi voluptas.
+                        With our trucks we are using Kogel trailers. Kogel trailers are an ideal choice for Grains Logistic Solution due to their robust construction and durability, which ensures the safe transportation of grains over long distances.
+                        The high-strength materials used in Kogel trailers provide exceptional load-bearing capacity, allowing them to carry large volumes of grains without compromising structural integrity.
                     </div>
                     <table>
                         <thead>
@@ -45,10 +46,10 @@ const Fleet = () => {
                         </thead>
                         <tbody>
                         <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
+                            <td>13.6m</td>
+                            <td>2.5m</td>
+                            <td>3.0m</td>
+                            <td>24 000kg</td>
                         </tr>
                         </tbody>
                     </table>
@@ -63,7 +64,7 @@ const Fleet = () => {
                         Iveco Stralis HiWay
                     </div>
                     <div className={s.truck_desc_text}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet deleniti ducimus enim exercitationem, explicabo incidunt ipsum itaque nostrum possimus provident quasi quis quos repellat sed sit totam ullam ut? Aliquid cum dolores iusto quia repellendus! Ad aut debitis deserunt et impedit, molestias nesciunt officiis quam quia quisquam sequi voluptas.
+                       Also we have trailers from German Company "Krone". The customization options offered by Krone enable Grains Logistic Solution to tailor the trailers according to their specific requirements, ensuring optimal performance, and streamlining the logistics process for grain transportation.
                     </div>
                     <table>
                         <thead>
@@ -76,10 +77,10 @@ const Fleet = () => {
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
+                                <td>13.6m</td>
+                                <td>2.5m</td>
+                                <td>3.0m</td>
+                                <td>24 000kg</td>
                             </tr>
                         </tbody>
                     </table>
