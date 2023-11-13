@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Fleet.module.css'
-import truckman from '../../assets/man.png'
-import truckiveco from '../../assets/iveco.png'
+import truckman from '../../assets/trucks/man.png'
+import truckiveco from '../../assets/trucks/iveco.png'
 import { motion } from 'framer-motion'
 
 const Fleet = () => {

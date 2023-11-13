@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import s from './About.module.css'
-import logo from '../../assets/transparent_logo.png'
-import loading from '../../assets/loading.svg'
+import logo from '../../assets/others/transparent_logo.png'
+import loading from '../../assets/others/loading.svg'
 import { motion } from 'framer-motion'
 
 const About = () => {

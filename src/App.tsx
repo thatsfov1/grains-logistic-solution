@@ -7,7 +7,7 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import {useEffect, useState} from "react";
 import FontFaceObserver from 'fontfaceobserver'
-import loading from './assets/loading.svg'
+import loading from './assets/others/loading.svg'
 import Fleet from "./pages/Fleet/Fleet";
 
 function App() {
