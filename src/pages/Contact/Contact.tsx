@@ -9,20 +9,27 @@ import { motion } from 'framer-motion';
 const Contact = () => {
 
     const {register,formState:{ errors },handleSubmit, reset} = useForm()
-    const form = useRef<HTMLFormElement>(null);
+    const form = useRef<HTMLFormElement | null>(null);
 
-    const sendEmail = (data:any) => {
-        emailjs.sendForm('service_49sw6hn',
-            'template_mm63bex',
-            form.current,
-            'zZCNCQObFfMVNCjw1')
-            .then((result) => {
-                console.log(result.text);
-                reset()
-            }, (error) => {
-                console.log(error.text);
-            });
+    const sendEmail = (data: any) => {
+    if (form.current) {
+        emailjs
+        .sendForm('service_49sw6hn', 'template_mm63bex', form.current, 'zZCNCQObFfMVNCjw1')
+        .then(
+            (result) => {
+            console.log(result.text);
+            reset();
+            },
+            (error) => {
+            console.log(error.text);
+            }
+        );
+    } else {
+        console.error('Form reference is null');
+    }
     };
+
+
 
   return (
     <div className={s.container}>
@@ -37,24 +44,24 @@ const Contact = () => {
                 <form ref={form} onSubmit={handleSubmit(sendEmail)}>
                     <input {...register("user_name", {required:"Name is required"})} type='text'
                            placeholder='Name and Surname(Required)' name='user_name'/>
-                    {errors.user_name && <div className={s.error}><FiAlertCircle/> {errors.user_name?.message}</div> }
+                    {errors.user_name && <div className={s.error}><FiAlertCircle/> <>{errors.user_name?.message}</></div> }
                     <input {...register("user_email", {required:'Email is required',
                         pattern: {
                             value:/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
                             message:'Email is incorrect'}
                     })}
                            type='text' placeholder='Email(Required)' name='user_email' />
-                    {errors.user_email && <div className={s.error}> <FiAlertCircle/> {errors.user_email?.message}</div> }
+                    {errors.user_email && <div className={s.error}> <FiAlertCircle/> <>{errors.user_email?.message}</></div> }
                     <input {...register("phone", {
                         pattern:{
                             value:/^\+(?:[0-9] ?){6,14}[0-9]$/,
                             message:'Phone Example:+380xxxxxxx'
                         }
                     })} type='tel' placeholder='Phone' name='phone'/>
-                    {errors.phone && <div className={s.error}> <FiAlertCircle/> {errors.phone?.message}</div> }
+                    {errors.phone && <div className={s.error}> <FiAlertCircle/> <>{errors.phone?.message}</></div> }
                     <textarea className={s.message_input} {...register("message",{required:"Type your message"})}
                               placeholder='Message content(Required)' name='message'/>
-                    {errors.message && <div className={s.error}><FiAlertCircle/> {errors.message?.message}</div>  }
+                    {errors.message && <div className={s.error}> <FiAlertCircle/> <>{errors.message?.message}</></div>  }
                     <button type='submit' > Send </button>
                 </form>
             </div>
