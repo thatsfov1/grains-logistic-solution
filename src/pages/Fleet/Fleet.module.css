@@ -3,9 +3,12 @@
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    padding: 50px;
+    width:100vw;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    text-align: center;
 }
 
 .title_container:after{
@@ -82,7 +85,7 @@ table th, table td {
 
 @media (max-width: 992px) {
     .title_container{
-        padding: 20px;
+        height: 76px;
     }
     .title{
         font-size: 30px;

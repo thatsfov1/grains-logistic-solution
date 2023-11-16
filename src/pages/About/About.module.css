@@ -1,13 +1,16 @@
 .title_container{
     color: #fff;
-    padding: 50px;
     font-family: 'Syne', sans-serif;
     font-weight: 800;
     background-image: url("../../assets/banners/pagesimage.jpeg");
+    width:100vw;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
-    text-align: center;
 }
 
 .title_container:after {
@@ -69,7 +72,7 @@ p:first-child{
 
 @media (max-width: 992px) {
     .title_container{
-        padding: 20px;
+        height: 76px;
     }
     .title{
         font-size: 30px;
