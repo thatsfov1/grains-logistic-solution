@@ -74,6 +74,7 @@ p:first-child{
 @media (max-width: 992px) {
     .title_container{
         height: 76px;
+        background-attachment: local;
     }
     .title{
         font-size: 30px;
