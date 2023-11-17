@@ -249,9 +249,6 @@
 }
 
 
-
-
-
 /**************************************************** adaptive **********************************************/
 
 @media (max-width: 1200px) {
@@ -289,12 +286,16 @@
         font-size: 30px;
     }
     .motive_text{
+        margin-top:10px ;
         width: 100%;
         font-size: 14px;
     }
 }
 
 @media (max-width: 576px) {
+    .why_choose_us{
+        padding: 50px 0;
+    }
     .text_top{
         font-size: 2rem;
     }
@@ -324,12 +325,16 @@
         padding-bottom: 30px;
     }
     .service_number{
-        font-size: 60px;
+        font-size: 50px;
     }
     .service_name{
         font-size: 10px;
         right: -45px;
     }
+    .first .service_name{
+        right:-35px;
+    }
+
 }
 
 
