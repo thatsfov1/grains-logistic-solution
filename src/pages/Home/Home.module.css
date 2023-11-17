@@ -304,6 +304,7 @@
     }
     .slider{
         height: 400px;
+        background-attachment: local;
     }
     .slider_btn{
         padding: 9px 25px;

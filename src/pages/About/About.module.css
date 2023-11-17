@@ -11,6 +11,7 @@
     background-size: cover;
     position: relative;
     background-attachment: fixed;
+    background-position: center center;
 }
 
 .title_container:after {
